@@ -1,0 +1,15 @@
+# 二層ノブの割り当て
+#   upper = 上のノブ（押し込みあり）、lower = 下のノブ
+#   使える割り当て名は `uv run knob-write --list` で確認できる
+#   書かなかった操作は、本体の今の設定のまま変わらない
+
+upper:
+  left: volumedown        # 左に回す
+  press: mute             # 押す（離したときに送られる）
+  right: volumeup         # 右に回す
+  press_left: wheelup     # 押しながら左に回す
+  press_right: wheeldown  # 押しながら右に回す
+
+lower:
+  left: prev              # 左に回す
+  right: next             # 右に回す
